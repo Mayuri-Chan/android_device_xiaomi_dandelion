@@ -29,15 +29,12 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_NAME := lineage_garden
 PRODUCT_DEVICE := garden
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi MT6765 G Series
 PRODUCT_MANUFACTURER := xiaomi
 
 # Build info
 TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := garden
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=garden \
-    PRODUCT_NAME=garden \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.211001.001.A1 7641976 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
