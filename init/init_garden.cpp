@@ -158,8 +158,12 @@ void vendor_load_properties()
         property_override("ro.product.device", "cattail");
     } else if (hwname == "dandelion") {
         property_override("ro.product.brand", "Redmi");
-        property_override("ro.product.model", "Redmi 9A");
         property_override("ro.product.device", "dandelion");
+        if (region == "India_9i") {
+            property_override("ro.product.model", "Redmi 9I");
+        } else {
+            property_override("ro.product.model", "Redmi 9A");
+        }
     }
 
 }
