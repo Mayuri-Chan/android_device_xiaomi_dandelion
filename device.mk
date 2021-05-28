@@ -190,4 +190,5 @@ PRODUCT_COPY_FILES += \
 
 # Symbols
 PRODUCT_PACKAGES += \
-    libshim_showlogo
+    libshim_showlogo \
+    libshim_vtservice
