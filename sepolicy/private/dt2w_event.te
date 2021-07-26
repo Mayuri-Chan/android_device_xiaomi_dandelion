@@ -1,0 +1,7 @@
+type dt2w_event, domain;
+type dt2w_event_exec, exec_type, system_file_type, file_type;
+
+init_daemon_domain(dt2w_event)
+
+allow dt2w_event input_device:dir r_dir_perms;
+allow dt2w_event input_device:chr_file rw_file_perms;

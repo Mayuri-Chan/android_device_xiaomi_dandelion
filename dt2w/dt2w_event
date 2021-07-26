@@ -1,0 +1,3 @@
+#!/system/bin/sh
+TOUCHDEV=$(/system/bin/getevent -i | /system/bin/grep -B6 -E -i 'input/ts' | /system/bin/head -n1 | /system/bin/grep -oE '[^ ]+$')
+/system/bin/sendevent $TOUCHDEV 0 1 $1

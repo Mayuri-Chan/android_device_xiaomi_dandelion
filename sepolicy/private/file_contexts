@@ -1,3 +1,6 @@
+# DT2W Script
+/system/bin/dt2w_event  u:object_r:dt2w_event_exec:s0
+
 # Kernel Power Off Charging (KPOC)
 /system/bin/kpoc_charger u:object_r:kpoc_charger_exec:s0
 
