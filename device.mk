@@ -192,4 +192,5 @@ PRODUCT_COPY_FILES += \
 
 # Symbols
 PRODUCT_PACKAGES += \
-    libshim_mtk_vt_service
+    libshim_mtk_vt_service \
+    libshim_sink

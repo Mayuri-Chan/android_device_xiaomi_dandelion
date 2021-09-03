@@ -39,6 +39,9 @@ function blob_fixup {
         lib/libmtk_vt_service.so)
             "$PATCHELF" --add-needed "libshim_mtk_vt_service.so" "$2"
             ;;
+        lib/libsink.so)
+            "$PATCHELF" --add-needed "libshim_sink.so" "$2"
+            ;;
     esac
 }
 

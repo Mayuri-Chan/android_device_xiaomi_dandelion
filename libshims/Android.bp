@@ -2,3 +2,8 @@ cc_library_shared {
     name: "libshim_mtk_vt_service",
     srcs: ["libshim_mtk_vt_service.cpp"],
 }
+
+cc_library_shared {
+    name: "libshim_sink",
+    srcs: ["libshim_sink.cpp"],
+}
