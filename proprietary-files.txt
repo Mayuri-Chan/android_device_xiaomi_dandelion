@@ -7,7 +7,6 @@
 -framework/mediatek-telephony-base.jar
 -framework/mediatek-telephony-common.jar
 -priv-app/ImsService/ImsService.apk
-framework/mediatek-res.apk
 bin/vtservice
 etc/init/init.vtservice.rc
 framework/mediatek-wfo-legacy.jar
