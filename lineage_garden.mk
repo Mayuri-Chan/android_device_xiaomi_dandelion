@@ -22,22 +22,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from dandelion device makefile
+# Inherit from garden device makefile
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_dandelion
-PRODUCT_DEVICE := dandelion
+PRODUCT_NAME := lineage_garden
+PRODUCT_DEVICE := garden
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi G25 Series
+PRODUCT_MODEL := Redmi MT6765 G Series
 PRODUCT_MANUFACTURER := xiaomi
 
 # Build info
 TARGET_VENDOR := xiaomi
-TARGET_VENDOR_PRODUCT_NAME := dandelion
+TARGET_VENDOR_PRODUCT_NAME := garden
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=dandelion \
-    PRODUCT_NAME=dandelion \
+    TARGET_DEVICE=garden \
+    PRODUCT_NAME=garden \
     PRIVATE_BUILD_DESC="dandelion-user 10 QP1A.190711.020 V12.0.12.0.QCDMIXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

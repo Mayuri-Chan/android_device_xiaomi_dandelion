@@ -10,7 +10,7 @@
 /sys/devices/platform/leds-mt65xx/leds/lcd-backlight(/.*)?                                 u:object_r:sysfs_leds:s0
 
 # HALs
-/system/bin/hw/android\.hardware\.light@2\.0-service\.dandelion    u:object_r:mtk_hal_light_exec:s0
+/system/bin/hw/android\.hardware\.light@2\.0-service\.garden    u:object_r:mtk_hal_light_exec:s0
 
 # VoLTE
 /system/bin/vtservice           u:object_r:vtservice_exec:s0

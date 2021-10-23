@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=dandelion
+DEVICE=garden
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2021

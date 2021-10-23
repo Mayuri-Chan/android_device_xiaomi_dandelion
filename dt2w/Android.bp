@@ -16,7 +16,7 @@
  */
 
 android_app {
-    name: "DT2W-Service-Dandelion",
+    name: "DT2W-Service-Garden",
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
@@ -30,13 +30,13 @@ android_app {
     },
 
     required: [
-        "privapp-permissions_org.lineageos.dt2w.dandelion"
+        "privapp-permissions_org.lineageos.dt2w.garden"
     ]
 }
 
 prebuilt_etc {
-    name: "privapp-permissions_org.lineageos.dt2w.dandelion",
+    name: "privapp-permissions_org.lineageos.dt2w.garden",
     sub_dir: "permissions",
-    src: "privapp-permissions_org.lineageos.dt2w.dandelion.xml",
+    src: "privapp-permissions_org.lineageos.dt2w.garden.xml",
     filename_from_src: true
 }
