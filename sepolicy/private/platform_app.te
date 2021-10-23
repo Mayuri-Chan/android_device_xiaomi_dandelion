@@ -1,0 +1,7 @@
+get_prop(platform_app, vendor_default_prop)
+
+allow platform_app recovery_service:service_manager find;
+
+# Allow platform_app to read fps info node
+allow platform_app sysfs_fps:dir search;
+allow platform_app sysfs_fps:file r_file_perms;
