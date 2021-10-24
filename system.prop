@@ -183,3 +183,21 @@ ro.config.hw_quickpoweron=true
 video.accelerate.hw=1
 ro.config.disable.hw_accel=false
 hw3d.force=1
+
+# Touch improvements
+touch.pressure.scale=0.001 
+persist.sys.ui.hw=1 
+touch.size.calibration=diameter 
+touch.size.scale=1 
+touch.size.bias=0 
+touch.size.isSummed=0 
+touch.pressure.scale=0.001 
+touch.orientation.calibration=none 
+touch.distance.calibration=none 
+touch.distance.scale=0 
+touch.coverage.calibration=box 
+touch.gestureMode=spots 
+MultitouchSettleInterval=1ms 
+MultitouchMinDistance=1px 
+TapInterval=1ms 
+TapSlop=1px
