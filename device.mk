@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilt/dtb:dtb.img
+    $(DEVICE_PATH)/prebuilt/dtb.img:dtb.img
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
