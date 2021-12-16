@@ -15,14 +15,13 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.dandelion",
-    init_rc: ["android.hardware.light@2.0-service.dandelion.rc"],
-    srcs: ["service.cpp", "Light.cpp"],
+    name: "android.hardware.light-service.dandelion",
+    init_rc: ["android.hardware.light-service.dandelion.rc"],
+    srcs: ["main.cpp", "Light.cpp"],
     shared_libs: [
         "libhardware",
-        "libhidlbase",
-        "liblog",
-        "libutils",
-        "android.hardware.light@2.0",
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.light-ndk_platform",
     ],
 }

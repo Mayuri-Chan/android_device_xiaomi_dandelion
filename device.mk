@@ -98,7 +98,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.dandelion
+    android.hardware.light-service.dandelion
 
 # KPOC
 PRODUCT_PACKAGES += \

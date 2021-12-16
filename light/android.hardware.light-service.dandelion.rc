@@ -1,0 +1,6 @@
+service vendor.light-default /system/bin/hw/android.hardware.light-service.dandelion
+    class hal
+    user system
+    group system
+    # shutting off lights while powering-off
+    shutdown critical
