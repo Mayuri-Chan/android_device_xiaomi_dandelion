@@ -26,7 +26,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, vendor/xiaomi/garden/garden-vendor.mk)
 
 # Treble
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Dynamic Partitions
@@ -39,7 +38,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/audio_policy_configuration.xml
+    $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/audio_policy_configuration.xml
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default

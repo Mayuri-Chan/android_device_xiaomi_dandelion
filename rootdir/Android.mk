@@ -37,7 +37,7 @@ LOCAL_MODULE       := fstab.mt6762
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/fstab.mt6762
-LOCAL_MODULE_PATH  := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc
+LOCAL_MODULE_PATH  := $(TARGET_OUT_PRODUCT)/vendor_overlay/30/etc
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -45,7 +45,7 @@ LOCAL_MODULE       := fstab.mt6765
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/fstab.mt6765
-LOCAL_MODULE_PATH  := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc
+LOCAL_MODULE_PATH  := $(TARGET_OUT_PRODUCT)/vendor_overlay/30/etc
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
