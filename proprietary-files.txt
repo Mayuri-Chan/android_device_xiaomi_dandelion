@@ -10,7 +10,6 @@
 bin/vtservice
 etc/init/init.vtservice.rc
 framework/mediatek-wfo-legacy.jar
-framework/mediatek-ims-wwop-common.jar
 framework/mediatek-ims-extension-plugin.jar
 framework/mediatek-ims-legacy.jar
 lib/libcomutils.so
@@ -20,20 +19,15 @@ lib/libimsma_rtp.so
 lib/libimsma_socketwrapper.so
 lib/libmtk_vt_service.so
 lib/libmtk_vt_wrapper.so
-lib/libmtkaudio_utils.so
 lib/libmtkavenhancements.so
-lib/libmtklimiter.so
 lib/libmtkperf_client.so
-lib/libmtkshifter.so
 lib/libsignal.so
 lib/libsink.so
 lib/libsource.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
 lib/libvt_avsync.so
-lib/vendor.mediatek.hardware.videotelephony@1.0.so
-lib/libgui_stock.so
-lib/vndk-29/libgui_stock.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Bluetooth
 lib/libldacBT_abr.so
@@ -43,15 +37,6 @@ lib/libldacBT_enc.so
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
 lib/libshowlogo.so
-lib/libsysenv_system.so
-
-# Trustonic TEE
-lib/libMcRegistry.so
-lib/libteeservice_client.trustonic.so
-lib/vendor.trustonic.teeregistry@1.0.so
-
-# Crypto
-etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 
 # MTK
 -priv-app/EngineerMode/EngineerMode.apk
