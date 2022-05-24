@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit from Ancient vendor
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit from LineageOS vendor
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Some build flags
 TARGET_BOOT_ANIMATION_RES := 720
@@ -28,15 +28,11 @@ TARGET_USES_BLUR := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
-# AncientOS
-ANCIENT_GAPPS := false
-ANCIENT_OFFICIAL := false
-
 # Inherit from garden device makefile
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := ancient_garden
+PRODUCT_NAME := lineage_garden
 PRODUCT_DEVICE := garden
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
