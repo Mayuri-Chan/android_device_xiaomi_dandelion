@@ -5,6 +5,9 @@ ro.vendor.audio.sos=true
 ro.vendor.audio.soundfx.type=mi
 ro.vendor.audio.soundfx.usb=true
 ro.vendor.audio.voice.volume.boost=manual
+ro.config.alarm_vol_steps=15
+ro.config.system_vol_steps=15
+ro.config.ring_notification_vol_steps=15
 
 # Brand
 Build.BRAND=MTK
