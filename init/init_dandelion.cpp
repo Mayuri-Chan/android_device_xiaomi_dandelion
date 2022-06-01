@@ -138,11 +138,14 @@ void vendor_load_properties()
     property_override(string("ro.charger.enable_suspend"), string("true"));
 
     std::string region = GetProperty("ro.boot.hwc", "");
+    std::string product_name = GetProperty("ro.product.name", "");
 
     property_override("ro.product.brand", "Redmi");
     property_override("ro.product.device", "dandelion");
     if (region == "India_9i") {
         property_override("ro.product.model", "Redmi 9I");
+    } else if (product_name == "dandelion_id2") { // Redmi 10A Indonesia
+        property_override("ro.product.model", "Redmi 10A");
     } else {
         property_override("ro.product.model", "Redmi 9A");
     }
