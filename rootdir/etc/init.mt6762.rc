@@ -49,17 +49,11 @@ on charger
 
     write /sys/power/pm_async 0
 
-on property:persist.sys.garden.dt2w=0 && property:ro.boot.hwname=dandelion
+on property:persist.sys.dandelion.dt2w=0
     exec /system/bin/sendevent /dev/input/event3 0 1 4
 
-on property:persist.sys.garden.dt2w=1 && property:ro.boot.hwname=dandelion
+on property:persist.sys.dandelion.dt2w=1
     exec /system/bin/sendevent /dev/input/event3 0 1 5
-
-on property:persist.sys.garden.dt2w=0 && property:ro.boot.hwname=angelica
-    exec /system/bin/sendevent /dev/input/event4 0 1 4
-
-on property:persist.sys.garden.dt2w=1 && property:ro.boot.hwname=angelica
-    exec /system/bin/sendevent /dev/input/event4 0 1 5
 
 on post-fs
     # Disable OEM Lights

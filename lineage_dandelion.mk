@@ -28,18 +28,18 @@ TARGET_USES_BLUR := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
-# Inherit from garden device makefile
+# Inherit from dandelion device makefile
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_garden
-PRODUCT_DEVICE := garden
+PRODUCT_NAME := lineage_dandelion
+PRODUCT_DEVICE := dandelion
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 
 # Build info
 TARGET_VENDOR := xiaomi
-TARGET_VENDOR_PRODUCT_NAME := garden
+TARGET_VENDOR_PRODUCT_NAME := dandelion
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.211001.001.A1 7641976 release-keys"
 

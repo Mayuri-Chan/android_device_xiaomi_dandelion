@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.garden"
+#define LOG_TAG "android.hardware.light@2.0-service.dandelion"
 
 #include <log/log.h>
 

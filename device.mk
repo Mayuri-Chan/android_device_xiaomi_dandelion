@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/garden
+DEVICE_PATH := device/xiaomi/dandelion
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -66,7 +66,7 @@ PRODUCT_PACKAGES += \
 
 # DT2W
 PRODUCT_PACKAGES += \
-    DT2W-Service-Garden
+    DT2W-Service-Dandelion
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_SYSTEM)/bin/dt2w_event
@@ -98,7 +98,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.garden
+    android.hardware.light@2.0-service.dandelion
 
 # KPOC
 PRODUCT_PACKAGES += \

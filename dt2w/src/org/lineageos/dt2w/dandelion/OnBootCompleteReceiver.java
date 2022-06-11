@@ -1,4 +1,4 @@
-package org.lineageos.dt2w.garden;
+package org.lineageos.dt2w.dandelion;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.os.UserHandle;
 
 public class OnBootCompleteReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
-        Intent sIntent = new Intent(context, DT2WServiceGarden.class);
+        Intent sIntent = new Intent(context, DT2WServiceDandelion.class);
         context.startServiceAsUser(sIntent, UserHandle.CURRENT);
     }
 }

@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/garden
+DEVICE_PATH := device/xiaomi/dandelion
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := angelica,angelican,angelicain,cattail,dandelion,garden
+TARGET_OTA_ASSERT_DEVICE := dandelion
 
 # Architecture
 TARGET_ARCH := arm
@@ -43,7 +43,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := garden
+TARGET_BOOTLOADER_BOARD_NAME := dandelion
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -64,8 +64,8 @@ TARGET_BOARD_PLATFORM := mt6765
 TARGET_BOARD_PLATFORM_GPU := POWERVR_GE8320
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_garden
-TARGET_RECOVERY_DEVICE_MODULES := libinit_garden
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_dandelion
+TARGET_RECOVERY_DEVICE_MODULES := libinit_dandelion
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb

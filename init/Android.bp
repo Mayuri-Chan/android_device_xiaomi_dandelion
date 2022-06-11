@@ -14,8 +14,8 @@
 // limitations under the License.
 //
 cc_library_static {
-    name: "libinit_garden",
-    srcs: ["init_garden.cpp"],
+    name: "libinit_dandelion",
+    srcs: ["init_dandelion.cpp"],
     recovery_available: true,
     shared_libs: ["libbase"],
     include_dirs: [
